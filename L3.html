@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <title>My Website</title><!-- The name of a tab  -->
+        <script src="main.js"></script>
+        <style>                     /*We code CSS inside our html file*/
+
+            html{                       /*  We set the scroll behaviour so that it is a smooth scrolling experience   */
+                scroll-behavior: smooth;
+            }
+
+
+            body{                       /* we say every text in body has font-family and no margin or padding   */
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                overflow-x:hidden;
+                transition: background-color 2s;
+                background-color:white;
+                color: black;
+            }
+
+            .topnav{                /* any class with topnav */
+                position:fixed;      /*Keeps our heading at the top at all times*/
+                border:black;
+                border-width:1px;
+                border-style: solid;
+                width: 100%;
+                border:black;
+                overflow:hidden;     /*Hides the scrollbar*/
+                background-color:#353353;
+                padding: 0;
+                z-index: 1;      /*Whether it is on top of things or underneath*/
+            }
+
+            .topnav a{
+                float:right;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+                font-size: 17px;
+                text-emphasis: inherit;
+                border:black;
+                border-width: 0.2px;
+                border-style: solid;
+                width:3%;
+                transition: width 2s, background-color 2s, color 2s;
+                border:black;
+                border-width:0.5px;
+                border-style:solid;
+            }
+
+            .topnav a.active{
+                background-color: #04AA6D;
+            }
+
+
+            .topnav a.active:hover{
+                text-decoration:underline;
+                width:300px;
+                background-color:#04AA6D;
+            }
+            
+
+
+
+
+
+            .topnav a:hover{
+                width: 300px;
+                background-color: #ddd;
+                text-decoration: underline;
+                color: black;
+            }
+            #home{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #353353;
+                height: 100%
+            }
+            .me{
+                padding: 50px;
+                transition: transform .5s; /* Animation */
+                width: 200px;
+                height:200px;
+                margin: 0 auto;
+            }
+
+            .me:hover{
+                transform: scale(1.5);
+            }
+
+            #about_img{
+                padding-right: 30px;
+                width: 150px;
+                height: 150px;
+                position: relative;
+                display: inline-block;
+                float: left;
+
+
+            }
+            #textbox_about{
+                font-size:1.7em;
+                display: inline-block;
+                height:100px;
+                width:60%;
+                background-color: rgb(249, 215, 76);
+                float: left;
+                margin-left:2%;
+                padding:40px;
+                border-radius: 20px;
+                margin-bottom:10%;
+                margin-top:2%;
+            }
+
+
+            .dark-mode{
+                transition: background-color 2s;
+                background-color: black;
+            }
+
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <header class="topnav">
+            <a onclick="myFunction()" style="float: left; width:auto;">Toggle Dark Mode</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="#home" class="active">Home</a>
+        </header>
+
+        <section id="home">
+           <centre>
+             <img class="me" alt="A picture of me" src="https://cdn.pixabay.com/photo/2017/07/08/19/32/symbol-2485367__340.png">
+             <h1 style="font-size: 35px; color: #f2f2f2  ; margin: 0;" >Mekyle Chaudhri</h1>
+             <p style="font-size:15px; color: #ddd;" >I can <strong>CODE (not)</strong></p>
+           </centre>
+
+        </section>
+   
+        <section id= "about">
+            <div style="margin-left:  10%;">
+
+                <h1 style="color:rgb(249, 215, 76); font-size:3.7em;">About Me</h1>
+
+                <br><br>
+            
+                <img id="about_img" src="https://cdn.pixabay.com/photo/2017/07/08/19/32/symbol-2485367__340.png">
+
+            
+            
+            </div>
+            <div id="textbox_about">
+                <p>Hi my name is Mekyle</p>
+
+            </div>
+            </section>
+
+            <section id="contact" style="display: inline-block; background-color:#353353; width:100%; height:100%; padding-top: 10px;">
+            <div style="padding:20px; width:100%;">
+            <h1 style="color:white;">Contacts</h1>
+           
+            <br>
+
+            <hr style="border: 0.5px solid white; width:100%">
+
+            <br>
+
+            <img src="https://cdn.pixabay.com/photo/2017/07/08/19/32/symbol-2485367__340.png" style="padding-right: 30px; padding-bottom:10px; width:100px; height:100px; float:left;">
+            
+            <h2>Please feel free to contact me</h2>
+            
+            <a style="color:white;" href="https://kz6-code:github.io/Alis_Portfolio">My Website</a>
+        
+        
+        
+        </div>
+
+            </section>
+   
+   
+   
+   
+    </body>
+</html
